@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <button id="hide_show">Hide</button><br>
+                <select name="" id="categories">
+                    <option value="salary">Salary</option>
+                </select>
+                <input type="number" id="num_value">
+                <button onclick="catFunction()">+</button><br>
+                
+                <label>Add new category</label><br>
+                <input type="text" name="new_cat" id="new_cat">
+                <button onclick="addCatFunction()">Add</button> 
+            </section>
+
+            <section>
+                <canvas id="bar_chart" width="300px" height="350px"></canvas>
+            </section>
+            <section>
+                <canvas id="pie_chart" width="400px" height="350px"></canvas>
+            </section>
+        </main>
+        <footer>
+            &copy;Matteo Lovric 2018 
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
